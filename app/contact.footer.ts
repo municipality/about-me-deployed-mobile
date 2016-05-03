@@ -7,7 +7,7 @@ import {Component} from 'angular2/core';
             <p class="section-header">Contact Information</p>
             <p class="icon email-icon">Email : {{email}}</p>
             <p>Built with Angular2</p>
-            <p id="copyright">&copy;{{name}} {{years}}</p>
+            <p>&copy;{{name}} {{years}}</p>
         </div>
     `
 })

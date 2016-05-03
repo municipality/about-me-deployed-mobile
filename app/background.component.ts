@@ -24,7 +24,7 @@ export class Background {
     //photoList : string[] = ["sample.jpg"];
     photos : any[][] = [];
     numRows : number = 10;
-    numCols : number = 8;
+    numCols : number = 3;
     numBackgroundImages : number = 34;
 
     imageClick (image) {

@@ -27,7 +27,7 @@ import {Banner} from './banner.component';
 })
 export class Wall {
     //used to build the squares
-    numColumns : number = 3;
+    numColumns : number = 1;
     builder : any[][] = [];
 
     //Construct the builder which is used to lay out the squares by template
