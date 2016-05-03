@@ -70,15 +70,14 @@ p {
 
 /*Wall CSS*/
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
     #banner-container {
         position :relative;
         width : 95%;
         height : 8em;
         margin: 0 auto 0 auto;
-        min-height : 220px;
-        min-width : 440px;
+        min-height : 160px;
     }
     #wall {
         min-width : 320px;
