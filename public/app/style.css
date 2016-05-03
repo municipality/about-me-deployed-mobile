@@ -21,7 +21,7 @@ p {
     padding: none;
     border : none;
     color: rgb(255, 255, 255);
-    font-size : 16pt;
+    font-size : 1em;
     height : auto;
     width : auto;
 }
@@ -69,18 +69,68 @@ p {
 /*End Background CSS*/
 
 /*Wall CSS*/
-
-#banner-container {
-    position :relative;
-    width : 95%;
-    height : 15em;
-    margin: 0 auto 0 auto;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
+/* Styles */
+    #banner-container {
+        position :relative;
+        width : 95%;
+        height : 8em;
+        margin: 0 auto 0 auto;
+        min-height : 220px;
+        min-width : 440px;
+    }
+    #wall {
+        min-width : 320px;
+        max-width : 500px;
+        position : relative;
+        width : 60%;
+        height : auto;
+        background-color : rgba(255, 255, 255, 0.7);
+        left : 50%;
+        -webkit-transform: translate(-50%, 0);
+         -moz-transform: translate(-50%, 0);
+           -o-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+        transform : translate(-50%, 0);
+        padding : .6em;
+    }
 }
+
+@media only screen and (min-device-width : 481px) {
+/* Styles */
+    #banner-container {
+        position :relative;
+        width : 95%;
+        min-width : 500px;
+        height : 15em;
+        min-height : 250px;
+        margin: 0 auto 0 auto;
+        overflow : hidden;
+    }
+
+    #wall {
+        min-width : 500px;
+        max-width : 500px;
+        position : relative;
+        width : 60%;
+        height : auto;
+        background-color : rgba(255, 255, 255, 0.7);
+        left : 50%;
+        -webkit-transform: translate(-50%, 0);
+         -moz-transform: translate(-50%, 0);
+           -o-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+        transform : translate(-50%, 0);
+        padding : .6em;
+    }
+}
+
+
 
 .banner-image {
     max-width : 100%;
     height : auto;
-    overflow : hidden;
     position : absolute;
     left : 0;
     opacity : 0;
@@ -92,19 +142,7 @@ p {
           transition: all .5s ease;
 }
 
-#wall {
-    position : relative;
-    width : 60%;
-    height : auto;
-    background-color : rgba(255, 255, 255, 0.7);
-    left : 50%;
-    -webkit-transform: translate(-50%, 0);
-     -moz-transform: translate(-50%, 0);
-       -o-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-    transform : translate(-50%, 0);
-    padding : .6em;
-}
+
 
 #square-table {
     position : relative;
