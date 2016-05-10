@@ -9,9 +9,13 @@ var users = require('./routes/users');
 
 var app = express();
 
+var compress = require('compression');
+//gzip compression
+app.use(compress());
 // expose node_modules to client app
-app.use(express.static("./node_modules/"));
+app.use(express.static("./node_modules/", { maxage: '7d', } ));
 app.use(express.static("./app/"));
+app.use(express.static(__dirname + '/public/', { maxage: '7d' }));
 
 
 // uncomment after placing your favicon in /public
